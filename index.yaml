@@ -3,6 +3,20 @@ entries:
   external-auth-server:
   - apiVersion: v1
     appVersion: "1.0"
+    created: "2022-06-02T04:05:50.507323311Z"
+    dependencies:
+    - condition: redis-ha.enabled
+      name: redis-ha
+      repository: https://charts.helm.sh/stable/
+      version: ~4.4.1
+    description: A Helm chart for Kubernetes
+    digest: 68012c7883dc936ac677229a887ad42f88aa0e869f5965f47f072a7822d39e7c
+    name: external-auth-server
+    urls:
+    - external-auth-server-0.2.3.tgz
+    version: 0.2.2
+  - apiVersion: v1
+    appVersion: "1.0"
     created: "2022-05-19T04:05:50.507323311Z"
     dependencies:
     - condition: redis-ha.enabled
